@@ -42,7 +42,7 @@ module.exports = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
-        shine: "shine 1.5s infinite linear", // Added shine animation
+        shine: "shine 1.5s infinite linear",
       },
 
       keyframes: {

@@ -29,12 +29,17 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const gradientWords = ["React.js", "Mumbai", "Certificates"];
+          const isGradient = gradientWords.includes(word.trim()); // Ensure no extra spaces
+
           return (
             <motion.span
               key={word + idx}
-              className={`${
-                idx > 3 ? "text-purple-300" : "dark:text-white"
-              } opacity-0`}
+              className={`opacity-0 ${
+                isGradient
+                  ? "bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent"
+                  : "dark:text-white"
+              }`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

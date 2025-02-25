@@ -6,14 +6,16 @@ import { FaLocationArrow } from "react-icons/fa";
 const Certificate = () => {
   return (
     <>
-      <div>
-        <h2 className="text-center text-3xl lg:text-5xl mt-20 font-bold">
+      <div id="project">
+        <h2 className="text-center text-3xl lg:text-5xl mt-20 font-bold appear-animation">
           A selection of <br />
-          <span className="block sm:inline text-purple-300">Certificates</span>
+          <span className="block sm:inline bg-gradient-to-r from-[#30CFD0] to-blue-600 bg-clip-text text-transparent">
+            Projects
+          </span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-4 mt-10 lg:mr-56 lg:ml-56 lg:mr-20 md:gap-y-6 gap-y-32 lg:gap-y-10 md:ml-8 md:mr-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10 lg:mt-0 lg:mr-56 lg:ml-56 lg:mr-20 md:gap-y-6 gap-y-32 lg:gap-y-10 md:ml-8 md:mr-8 appear-animation">
         {projects.map(({ id, title, des, img, video, iconLists, link }) => (
           <div
             key={id}

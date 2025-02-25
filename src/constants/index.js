@@ -33,7 +33,7 @@ import zent from "../assets/zent.mp4";
 
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.png";
-import project3 from "../assets/project3.jpg";
+import project3 from "../assets/3pro.jpeg";
 
 export const project1Img = project1;
 export const project2Img = project2;
@@ -139,6 +139,13 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+];
+
+const navItems = [
+  { name: "About", id: "about" },
+  { name: "Project", id: "project" },
+  { name: "Tech Stack", id: "stack" },
+  { name: "Contact", id: "contact" },
 ];
 
 const experiences = [
@@ -252,6 +259,20 @@ const projects = [
     ],
     link: "Visit",
   },
+  {
+    id: 3,
+    title: "Microsoft Azure Fundamentals",
+    des: "Unlock the potential of cloud computing with Microsoft Azure Fundamentals",
+    img: "/src/assets/swiggypr.png",
+    iconLists: [
+      "/src/assets/Azure.png",
+      "/src/assets/wing.png",
+      "/src/assets/Azure.png",
+      "/src/assets/Azservices.svg",
+      "/src/assets/fm.svg",
+    ],
+    link: "Visit",
+  },
 ];
 
 export { emailicon, messengericon, whatsappicon };
@@ -316,4 +337,5 @@ export {
   testimonials,
   projects,
   contactInfo,
+  navItems,
 };

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Pyramid from "./ui/pyramid";
 import { contactInfo } from "../constants";
 import { BsFillSendFill } from "react-icons/bs";
 import { SiFiverr } from "react-icons/si";
@@ -18,11 +17,14 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative overflow-hidden  sm:p-10 z-10 mt-14 sm:mt-16"
+      className="relative overflow-hidden  sm:p-10 z-10 mt-14 sm:mt-16 right-side-animation"
     >
-      <div className="font-bold text-3xl sm:text-5xl text-center">
+      <div className="font-bold text-3xl sm:text-5xl text-center ">
         <h1>
-          Contact <span className="text-purple-300">Me</span>
+          Contact{" "}
+          <span className="bg-gradient-to-r from-emerald-800 to-blue-500 bg-clip-text text-transparent">
+            Me
+          </span>
         </h1>
       </div>
       <div
@@ -53,19 +55,19 @@ const Contact = () => {
                 key={index}
                 className="flex items-center w-full sm:w-80 md:w-full p-4 border border-gray-700 rounded-lg bg-gray-800 mt-2"
               >
-                <div className="w-10 h-10 flex-shrink-0">
+                <div className="w-7 h-7 lg:w-10 lg:h-10 flex-shrink-0">
                   <img
                     src={contact.icon}
                     alt="contact icon"
                     className="object-contain"
                   />
                 </div>
-                <div className="flex flex-1 justify-between items-center ml-4">
+                <div className="flex flex-1 justify-between items-center ml-3 lg:ml-4">
                   <div>
-                    <h3 className="text-white text-lg font-semibold">
+                    <h3 className="text-white text-sm lg:text-lg font-semibold">
                       {contact.name}
                     </h3>
-                    <p className="text-gray-400 text-sm truncate hidden sm:block">
+                    <p className="text-gray-400 text-sm truncate hidden block">
                       {contact.value}
                     </p>
                   </div>
@@ -161,7 +163,7 @@ const Contact = () => {
           <button
             type="submit"
             onClick={handleClick}
-            className="flex items-center justify-center w-full sm:w-48 lg:w-52 sm:ml-56 p-4 text-lg font-semibold text-white bg-blue-500 rounded-lg transition hover:bg-blue-600 group overflow-hidden mt-7"
+            className="flex items-center justify-center w-full sm:w-48 lg:w-52 sm:ml-56 lg:ml-36 p-4 text-lg font-semibold text-white bg-blue-500 rounded-lg transition hover:bg-blue-600 group overflow-hidden mt-7"
           >
             <div className="flex items-center gap-2">
               <BsFillSendFill className="animate-bounce" />

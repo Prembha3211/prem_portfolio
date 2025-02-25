@@ -5,8 +5,11 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center w-4/5 mt-28 lg:mt-42  sm:mt-64 mx-auto">
-      <h1 className="text-3xl sm:text-4xl font-bold">Hello, There 🖐️</h1>
+    <div
+      id="about"
+      className="flex flex-col items-center w-4/5 mt-24 lg:mt-42 sm:mt-64 mx-auto "
+    >
+      <h1 className="text-3xl sm:text-4xl font-bold ">Hello, There 🖐️</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-8">
         <div className="relative flex flex-col items-start justify-center w-full h-auto sm:h-[50vh] lg:h-[42vh] overflow-hidden border border-gray-500 bg-[#080020b7] rounded-2xl transition-shadow duration-300 shadow-md hover:shadow-lg p-5">
           <img
@@ -50,7 +53,7 @@ const About = () => {
           <p className="mt-2 text-gray-400 text-sm leading-5 max-w-xs">
             I'm based in Italy, Bari and open to remote work worldwide.
           </p>
-          <div className="ml-14 mt-7 lg:mt-0">
+          <div className="ml-9 lg:ml-14 mt-7 lg:mt-0">
             <a href="">
               <MagicButton
                 title="Contact me"
